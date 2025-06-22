@@ -10,12 +10,11 @@ func main() {
     requestSong()
 }
 
-func greetUser()(string, string){
+func greetUser()(){
     fmt.Printf("Welcome to %v!\nThis is DJ %v, ready to make you dance! \n", appName, djName)
-    return appName, djName
 }
 
-func requestSong()(string, string, string){
+func requestSong()(){
     var userName string
     var songName string
     var artistName string
@@ -29,7 +28,5 @@ func requestSong()(string, string, string){
     fmt.Printf("Please enter the artist of the song: ")
     fmt.Scanln(&artistName)
 
-    fmt.Printf("Hi %v, you have requested for %v by %v\n", userName, songName, artistName)
-    return userName, songName, artistName
-
+    fmt.Printf("Hi %v, you have requested for %v by %v\n", userName, songName, artistName)   
 }
